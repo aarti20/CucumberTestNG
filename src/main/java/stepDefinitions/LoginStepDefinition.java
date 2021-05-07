@@ -15,12 +15,13 @@ import cucumber.api.java.en.When;
 public class LoginStepDefinition{
 
 	 WebDriver driver;
-
+     int a;
 	
 	 @Given("^user is already on Login Page$")
 	 public void user_already_on_login_page(){
 	 System.setProperty("webdriver.chrome.driver","/Users/naveenkhunteta/Downloads/chromedriver");
 	 driver = new ChromeDriver();
+
 	 driver.get("https://www.freecrm.com/index.html");
 	 }
 	
